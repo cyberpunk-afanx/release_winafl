@@ -1,0 +1,10 @@
+^C:\USERS\ADMIN\DESKTOP\WINAFL-MASTER\BUILD64\CMAKEFILES\F3F53F4E3933DA5AAE96C53E7EA098F8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Admin/Desktop/winafl-master -BC:/Users/Admin/Desktop/winafl-master/build64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Admin/Desktop/winafl-master/build64/WinAFL.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
